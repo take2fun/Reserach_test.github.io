@@ -13,16 +13,23 @@
 //Good Design
 
 void setup() {
+size(1200,700):
+background(255);
 }
 void draw() {
 }
 
 void keyReleased() {
+background(255);
   if (keyCode == ENTER) {
     println("ENTER");
+    text("ENTER",width/2,height/2)
   } else if (keyCode == BACKSPACE) {
     println("BACKSPACE");
+    text("BACKSPACE",width/2,height/2)
   } else {
+    text("No",width/2,height/2-20)
+    text(keyCode,width/2,height/2)
     println("no");
     println(keyCode);
   }
